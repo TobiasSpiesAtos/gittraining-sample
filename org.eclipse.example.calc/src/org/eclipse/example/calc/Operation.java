@@ -10,6 +10,7 @@ package org.eclipse.example.calc;
 
 public interface Operation {
 	// HELP
+	//Test
 	/**
 	 * @return name of the operation
 	 */
