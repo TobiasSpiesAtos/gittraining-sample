@@ -9,7 +9,6 @@
 package org.eclipse.example.calc.internal.ui.swing;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.Container;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -101,10 +100,6 @@ public class CalculatorUI extends JFrame implements TextProvider,
 	private void addNumberButton(int i, String name) {
 		numberButtons[i] = new JButton();
 		numberButtons[i].setText(name);
-		Color color = new Color(Float.parseFloat(Math.random() + ""),
-				Float.parseFloat(Math.random() + ""), Float.parseFloat(Math
-						.random() + ""));
-		numberButtons[i].setBackground(color);
 		numberButtons[i].addActionListener(this);
 		numberButtonsPanel.add(numberButtons[i]);
 	}
